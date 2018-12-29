@@ -1209,7 +1209,8 @@ pre .javascript .function {
   transition-delay: 0s;
 }
 .menu .menu-item a:hover {
-  border-bottom-color: #222;
+  border-bottom-color: #417df5;
+  color: #417df5;
 }
 .menu .menu-item .fa {
   margin-right: 5px;
@@ -1465,6 +1466,7 @@ pre .javascript .function {
   text-align: center;
   word-break: break-word;
   font-weight: 400;
+  margin: 16px 0px;
 }
 .posts-expand .post-title-link {
   display: inline-block;
@@ -1479,7 +1481,7 @@ pre .javascript .function {
   position: absolute;
   width: 100%;
   height: 2px;
-  bottom: 0;
+  bottom: -10px;
   left: 0;
   background-color: #000;
   visibility: hidden;
@@ -1555,6 +1557,17 @@ pre .javascript .function {
 }
 .post-button {
   margin-top: 40px;
+}
+.post-button .btn {
+  border-radius: 4px;
+  color: #417df5;
+  border-bottom: none;
+  border: 1px solid #417df5;
+  background-color: #fff;
+}
+.post-button .btn:hover {
+  background-color: #417df5;
+  color: #fff;
 }
 .posts-expand .post-tags {
   margin-top: 40px;
@@ -1697,13 +1710,13 @@ pre .javascript .function {
 .my_post_copyright li a {
   color: #0593d3;
   border-bottom: none;
-  border-bottom: 1px solid #0593d3;
+  border-bottom: 1px solid #417df5;
   text-decoration: none;
 }
 .my_post_copyright li a:hover {
   color: #417df5;
   border-bottom: none;
-  border-bottom: 1px solid #417df5;
+  border-bottom: 1px solid #316dbf;
 }
 .sidebar {
   position: fixed;
@@ -1816,22 +1829,22 @@ pre .javascript .function {
 /* 设置循环动画 [animation: (play)动画名称 (2s)动画播放时长单位秒或微秒 (ase-out)动画播放的速度曲线为以低速结束 
     (1s)等待1秒然后开始动画 (1)动画播放次数(infinite为循环播放) ]*/
 /* 鼠标经过头像旋转360度 */
-  -webkit-transition: -webkit-transform 1s ease-out;
-  -moz-transition: -moz-transform 1s ease-out;
-  transition: transform 1s ease-out;
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  -moz-transition: -moz-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
 }
 img:hover {
 /* 鼠标经过停止头像旋转 
   -webkit-animation-play-state:paused;
   animation-play-state:paused;*/
 /* 鼠标经过头像旋转360度 */
-  -webkit-transform: rotateZ(360deg);
-  -moz-transform: rotateZ(360deg);
-  -webkit-transform: rotateZ(360deg);
-  -moz-transform: rotateZ(360deg);
-  -ms-transform: rotateZ(360deg);
-  -o-transform: rotateZ(360deg);
-  transform: rotateZ(360deg);
+  -webkit-transform: rotateZ(360deg) scale(1.2);
+  -moz-transform: rotateZ(360deg) scale(1.2);
+  -webkit-transform: rotateZ(360deg) scale(1.2);
+  -moz-transform: rotateZ(360deg) scale(1.2);
+  -ms-transform: rotateZ(360deg) scale(1.2);
+  -o-transform: rotateZ(360deg) scale(1.2);
+  transform: rotateZ(360deg) scale(1.2);
 }
 @-webkit-keyframes play {
   0% {
@@ -1981,7 +1994,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f7ddff;
+  background: #06e53e;
 }
 .links-of-blogroll {
   font-size: 13px;
