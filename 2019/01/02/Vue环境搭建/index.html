@@ -112,7 +112,7 @@
 
 
 
-  <meta name="keywords" content="AVFoundation(媒体捕捉、二维码),">
+  <meta name="keywords" content="vue-cli,">
 
 
 
@@ -123,32 +123,23 @@
 
 
 
-<meta name="description" content="AVFoundation学习笔记12345本博文内容:1. 实现二维码扫描2. 实现自定义相机拍照功能3. 实现图片捕捉功能4. 附加: 手电筒的打开 关闭 捕捉设备AVCaptureDevice为诸如摄像头或麦克风等物理设备定义了一个接口。针对物理设备定义了大量控制方法，包括对焦、白平衡、曝光等。最常用的方法是1+ (nullable AVCaptureDevice *)defaultDevic">
-<meta name="keywords" content="AVFoundation(媒体捕捉、二维码)">
+<meta name="description" content="Vue 环境搭建 &amp;ensp; &amp;ensp; 在使用vue.js 构建大型应用的时候推荐使用 NPM 安装方法, NPM能很好的和诸如 &amp;nbsp;Webpack &amp;nbsp;或者 &amp;nbsp;Browserify 模块打包器配合使用   工具: node.js环境(npm包安装) vue-cli脚手架构建工具 cnpm npm淘宝镜像     1. Homebrew安装123456Homebre">
+<meta name="keywords" content="vue-cli">
 <meta property="og:type" content="article">
-<meta property="og:title" content="AVFoundation学习笔记">
-<meta property="og:url" content="https://ryanmans.github.io/2019/01/02/AVFoundation学习笔记/index.html">
+<meta property="og:title" content="Vue环境搭建">
+<meta property="og:url" content="https://ryanmans.github.io/2019/01/02/Vue环境搭建/index.html">
 <meta property="og:site_name" content="ALLen、LAS&#39;s Blog">
-<meta property="og:description" content="AVFoundation学习笔记12345本博文内容:1. 实现二维码扫描2. 实现自定义相机拍照功能3. 实现图片捕捉功能4. 附加: 手电筒的打开 关闭 捕捉设备AVCaptureDevice为诸如摄像头或麦克风等物理设备定义了一个接口。针对物理设备定义了大量控制方法，包括对焦、白平衡、曝光等。最常用的方法是1+ (nullable AVCaptureDevice *)defaultDevic">
+<meta property="og:description" content="Vue 环境搭建 &amp;ensp; &amp;ensp; 在使用vue.js 构建大型应用的时候推荐使用 NPM 安装方法, NPM能很好的和诸如 &amp;nbsp;Webpack &amp;nbsp;或者 &amp;nbsp;Browserify 模块打包器配合使用   工具: node.js环境(npm包安装) vue-cli脚手架构建工具 cnpm npm淘宝镜像     1. Homebrew安装123456Homebre">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/WEBRESOURCEd8d7067f19e643d30aeac993ae730ae0/1758">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/847E7C362C1043259E7005F216BB55BE/1814">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/DB4B28BA62ED44EEAFA2F485CF7FE0E5/1774">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/5A8F7AE6B4D54026A52B2D6C879EE866/1863">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/7B556725977A4C22903889B3CCB6389D/1787">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/5D2F788A0AF34FB7AFFE81318C6EF61D/1803">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/21E3CE4EDFCC4ADC9CE10E52B2745DB1/1805">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/E9A2739ED1714B75A9DC563C4E10CEE4/1807">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/283A79E36DB74F1488FC47BD995E5AA2/1831">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/A7EDA26A550842F786A63CED14504F61/1825">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/F8AA61D53EEC4376AC1146A91E23AF35/1841">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/B8E11CE6F815418889ABD15064678852/1845">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/1BA1F4EAC4514FAD913EED8633B2E069/1843">
-<meta property="og:updated_time" content="2019-01-02T13:49:32.204Z">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/264e93ecfcb6d8df34617e6d42cab3b4/xmlnote/WEBRESOURCEe30d3c8009a8066b3588ba6443f54bce/1098">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/264e93ecfcb6d8df34617e6d42cab3b4/xmlnote/WEBRESOURCE456704b27563fc5a49ab3bbdb331442f/1136">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/264e93ecfcb6d8df34617e6d42cab3b4/xmlnote/WEBRESOURCE3917cacbd76ad4c550974a6088a0b824/1294">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/264e93ecfcb6d8df34617e6d42cab3b4/xmlnote/WEBRESOURCE2b1f8cb619c6b4947e00296514588a87/1297">
+<meta property="og:updated_time" content="2019-01-02T13:59:19.324Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="AVFoundation学习笔记">
-<meta name="twitter:description" content="AVFoundation学习笔记12345本博文内容:1. 实现二维码扫描2. 实现自定义相机拍照功能3. 实现图片捕捉功能4. 附加: 手电筒的打开 关闭 捕捉设备AVCaptureDevice为诸如摄像头或麦克风等物理设备定义了一个接口。针对物理设备定义了大量控制方法，包括对焦、白平衡、曝光等。最常用的方法是1+ (nullable AVCaptureDevice *)defaultDevic">
-<meta name="twitter:image" content="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/WEBRESOURCEd8d7067f19e643d30aeac993ae730ae0/1758">
+<meta name="twitter:title" content="Vue环境搭建">
+<meta name="twitter:description" content="Vue 环境搭建 &amp;ensp; &amp;ensp; 在使用vue.js 构建大型应用的时候推荐使用 NPM 安装方法, NPM能很好的和诸如 &amp;nbsp;Webpack &amp;nbsp;或者 &amp;nbsp;Browserify 模块打包器配合使用   工具: node.js环境(npm包安装) vue-cli脚手架构建工具 cnpm npm淘宝镜像     1. Homebrew安装123456Homebre">
+<meta name="twitter:image" content="https://note.youdao.com/yws/public/resource/264e93ecfcb6d8df34617e6d42cab3b4/xmlnote/WEBRESOURCEe30d3c8009a8066b3588ba6443f54bce/1098">
 
 
 
@@ -178,13 +169,13 @@
 
 
 
-  <link rel="canonical" href="https://ryanmans.github.io/2019/01/02/AVFoundation学习笔记/">
+  <link rel="canonical" href="https://ryanmans.github.io/2019/01/02/Vue环境搭建/">
 
 
 
 
 
-  <title>AVFoundation学习笔记 | ALLen、LAS's Blog</title>
+  <title>Vue环境搭建 | ALLen、LAS's Blog</title>
   
 
 
@@ -337,7 +328,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ryanmans.github.io/2019/01/02/AVFoundation学习笔记/">
+    <link itemprop="mainEntityOfPage" href="https://ryanmans.github.io/2019/01/02/Vue环境搭建/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ALLen、LAS">
@@ -354,7 +345,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">AVFoundation学习笔记</h1>
+          <h1 class="post-title" itemprop="name headline">Vue环境搭建</h1>
         
 
         <div class="post-meta">
@@ -366,7 +357,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-02T21:41:54+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-02T21:58:02+08:00">
                 2019-01-02
               </time>
             
@@ -389,8 +380,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Object-C/" itemprop="url" rel="index">
-                    <span itemprop="name">Object-C</span>
+                  <a href="/categories/Vue/" itemprop="url" rel="index">
+                    <span itemprop="name">Vue</span>
                   </a>
                 </span>
 
@@ -420,7 +411,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  602 字
+                  739 字
                 </span>
               
 
@@ -457,38 +448,25 @@
       
 
       
-        <h4 id="AVFoundation学习笔记"><a href="#AVFoundation学习笔记" class="headerlink" title="AVFoundation学习笔记"></a>AVFoundation学习笔记</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">本博文内容:</span><br><span class="line">1. 实现二维码扫描</span><br><span class="line">2. 实现自定义相机拍照功能</span><br><span class="line">3. 实现图片捕捉功能</span><br><span class="line">4. 附加: 手电筒的打开 关闭</span><br></pre></td></tr></table></figure>
-<h5 id="捕捉设备"><a href="#捕捉设备" class="headerlink" title="捕捉设备"></a>捕捉设备</h5><p>AVCaptureDevice为诸如摄像头或麦克风等物理设备定义了一个接口。针对物理设备定义了大量控制方法，包括对焦、白平衡、曝光等。最常用的方法是<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+ (nullable AVCaptureDevice *)defaultDeviceWithMediaType:(AVMediaType)mediaType</span><br></pre></td></tr></table></figure></p>
-<h5 id="捕捉会话"><a href="#捕捉会话" class="headerlink" title="捕捉会话"></a>捕捉会话</h5><p> AVCaptureSession(媒体捕捉的核心类),用于连接输入输出的资源。捕捉会话有一个会话预设值，用于控制捕捉数据的格式和质量，默认为AVCaptureSessionPresentHigh</p>
-<p><img src="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/WEBRESOURCEd8d7067f19e643d30aeac993ae730ae0/1758" alt=""></p>
-<p>基础使用:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">备注:  AVCaptureSession的开启和停止,在完全开启或完全结束之前都会阻塞线程, 因此这里必须放在后台线程中处理，否则，就会导致界面不响.</span><br></pre></td></tr></table></figure>
-<p><img src="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/847E7C362C1043259E7005F216BB55BE/1814" alt=""></p>
-<h5 id="捕捉设备的输入"><a href="#捕捉设备的输入" class="headerlink" title="捕捉设备的输入"></a>捕捉设备的输入</h5><p>在使用捕捉设备进行处理前，首先要添加一个输入设备，不过一个捕捉设备不能直接添加到AVCaptureSession，但可以将它封装到AVCaptureDeviceInput实例中来添加，使用-deviceInputWithDevice:error:方法</p>
-<p><img src="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/DB4B28BA62ED44EEAFA2F485CF7FE0E5/1774" alt=""></p>
-<h5 id="捕捉的输出"><a href="#捕捉的输出" class="headerlink" title="捕捉的输出"></a>捕捉的输出</h5><p>AVCaptureOutput是一个抽象基类，用于为从捕捉会话得到的数据输入到目的地。应使用这个类的一些派生类如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. AVCaptureStillImageOuptut 静态图片输出(拍照)</span><br><span class="line">2. AVCaptureMovieFileOutput  视频输出(视频录制)</span><br><span class="line">3. AVCaptureVideoDataOutput  视频数据输出(连拍,视频录制)</span><br><span class="line">4. AVCaptureAudioDataOutput:音频数据输出</span><br></pre></td></tr></table></figure>
-<h5 id="捕捉预览"><a href="#捕捉预览" class="headerlink" title="捕捉预览"></a>捕捉预览</h5><p>AVCaptureVideoPreviewLayer可满足在捕捉时的实时预览，类似于AVPlayerLayer的角色，支持重力概念，可控制视频内容渲染和缩放、拉伸效果.</p>
-<h5 id="手电筒的打开、关闭"><a href="#手电筒的打开、关闭" class="headerlink" title="手电筒的打开、关闭"></a>手电筒的打开、关闭</h5><p>基本方法:</p>
-<p><img src="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/5A8F7AE6B4D54026A52B2D6C879EE866/1863" alt=""></p>
-<h5 id="实现二维码扫描"><a href="#实现二维码扫描" class="headerlink" title="实现二维码扫描"></a>实现二维码扫描</h5><p>AVCaptureMetadataOutput 用于处理AVCaptureSession产生的定时元数据的捕获输出，继承自 AVCaptureOutput</p>
-<p>AVMetadataObjectType,元数据类型,主要如下:<br><img src="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/7B556725977A4C22903889B3CCB6389D/1787" alt=""></p>
-<p>遵从协议AVCaptureMetadataOutputObjectsDelegate</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (void)captureOutput:(AVCaptureOutput *)output didOutputMetadataObjects:(NSArray&lt;__kindof AVMetadataObject *&gt; *)metadataObjects fromConnection:(AVCaptureConnection *)connection</span><br></pre></td></tr></table></figure>
-<p>基础代码如下:</p>
-<p><img src="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/5D2F788A0AF34FB7AFFE81318C6EF61D/1803" alt=""></p>
-<p><img src="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/21E3CE4EDFCC4ADC9CE10E52B2745DB1/1805" alt=""></p>
-<p><img src="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/E9A2739ED1714B75A9DC563C4E10CEE4/1807" alt=""></p>
-<h5 id="自定义拍照"><a href="#自定义拍照" class="headerlink" title="自定义拍照"></a>自定义拍照</h5><p>基础方法:</p>
-<p><img src="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/283A79E36DB74F1488FC47BD995E5AA2/1831" alt=""></p>
-<p><img src="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/A7EDA26A550842F786A63CED14504F61/1825" alt=""></p>
-<h5 id="实现连拍"><a href="#实现连拍" class="headerlink" title="实现连拍"></a>实现连拍</h5><p>AVCaptureVideoDataOutput,原始视频帧，用于获取实时图像以及视频录制<br>遵从协议:AVCaptureVideoDataOutputSampleBufferDelegate</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//AVCaptureVideoDataOutput获取实时图像，这个代理方法的回调频率很快，几乎与手机屏幕的刷新频率一样快</span><br><span class="line">- (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection;</span><br></pre></td></tr></table></figure>
-<p>基础方法:</p>
-<p><img src="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/F8AA61D53EEC4376AC1146A91E23AF35/1841" alt=""></p>
-<p><img src="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/B8E11CE6F815418889ABD15064678852/1845" alt=""></p>
-<p><img src="https://note.youdao.com/yws/public/resource/b4c14e56820f65411c455996604366b0/xmlnote/1BA1F4EAC4514FAD913EED8633B2E069/1843" alt=""></p>
-<h5 id="完整项目输出"><a href="#完整项目输出" class="headerlink" title="完整项目输出"></a>完整项目输出</h5><p>Github地址: <a href="https://github.com/ryanmans/XKCaptureMetadataKit" target="_blank" rel="noopener">XKCaptureMetadataKit</a></p>
+        <h4 id="Vue-环境搭建"><a href="#Vue-环境搭建" class="headerlink" title="Vue 环境搭建"></a>Vue 环境搭建</h4><p> &ensp; &ensp; 在使用vue.js 构建大型应用的时候推荐使用 NPM 安装方法, NPM能很好的和诸如 &nbsp;<a href="https://webpack.js.org/" target="_blank" rel="noopener">Webpack</a> &nbsp;或者 &nbsp;<a href="http://browserify.org/" target="_blank" rel="noopener">Browserify</a> 模块打包器配合使用  </p>
+<h5 id="工具"><a href="#工具" class="headerlink" title="工具:"></a>工具:</h5><ul>
+<li>node.js环境(npm包安装)</li>
+<li>vue-cli脚手架构建工具</li>
+<li>cnpm npm淘宝镜像   </li>
+</ul>
+<h5 id="1-Homebrew安装"><a href="#1-Homebrew安装" class="headerlink" title="1. Homebrew安装"></a>1. Homebrew安装</h5><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Homebrew简称brew，是Mac OSX上的软件包管理工具，能在Mac中方便的安装软件或者卸载软件</span><br><span class="line"></span><br><span class="line">打开终端,执行以下命令安装<span class="symbol">Homebrew:</span></span><br><span class="line"></span><br><span class="line">ruby -e <span class="string">"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</span></span><br></pre></td></tr></table></figure>
+<h5 id="2-Node安装"><a href="#2-Node安装" class="headerlink" title="2. Node安装"></a>2. Node安装</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">打开终端,执行以下命令安装node: brew install node</span><br><span class="line"></span><br><span class="line">查看版本,检查是否安装成功: node -v   npm -v</span><br></pre></td></tr></table></figure>
+<h5 id="3-Cnpm安装"><a href="#3-Cnpm安装" class="headerlink" title="3. Cnpm安装"></a>3. Cnpm安装</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cnpm和npm用法一致, 只是使用过的是国内的淘宝镜像,效率会比npm高很多</span><br><span class="line"></span><br><span class="line">打开终端,执行以下命令安装cnpm:</span><br><span class="line"></span><br><span class="line">npm install cnpm -g --registry=https://registry.npm.taobao.org</span><br><span class="line"></span><br><span class="line">查看版本,检查是否安装成功: cnpm -v</span><br></pre></td></tr></table></figure>
+<h5 id="4-vue-cli-脚手架构建工具"><a href="#4-vue-cli-脚手架构建工具" class="headerlink" title="4. vue-cli (脚手架构建工具)"></a>4. vue-cli (脚手架构建工具)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">打开终端,执行以下命令安装vue-cli:</span><br><span class="line"></span><br><span class="line">npm install -g vue-cli 或 cnpm install -g vue-cli</span><br></pre></td></tr></table></figure>
+<h5 id="5-vue-init-构建项目"><a href="#5-vue-init-构建项目" class="headerlink" title="5. vue-init 构建项目"></a>5. vue-init 构建项目</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1.新建目录 web-vue 文件夹</span><br><span class="line"></span><br><span class="line">2.打开终端,执行以下命令构建项目:</span><br><span class="line"></span><br><span class="line">  vue init webpack first-app</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Project name :项目名称  如果不需要更改直接回车就可以了。注意：这里不能使用大写</span><br><span class="line"></span><br><span class="line">Project description:项目描述，默认为A Vue.js project,直接回车，不用编写。</span><br><span class="line"></span><br><span class="line">Author：作者，如果你有配置git的作者，它会读取</span><br><span class="line"></span><br><span class="line">Install  vue-router? 是否安装vue的路由插件，我们这里需要安装，所以选择Y</span><br><span class="line"></span><br><span class="line">Use ESLint to lint your code? 是否用ESLint来限制你的代码错误和风格。我们这里不需要输入n（建议），如果你是大型团队开发，最好是进行配置。</span><br><span class="line"></span><br><span class="line">setup unit tests with  Karma + Mocha? 是否需要安装单元测试工具Karma+Mocha，我们这里不需要，所以输入n</span><br><span class="line"></span><br><span class="line">Setup e2e tests with Nightwatch?是否安装e2e来进行用户行为模拟测试，我们这里不需要，所以输入n</span><br></pre></td></tr></table></figure>
+<p><img src="https://note.youdao.com/yws/public/resource/264e93ecfcb6d8df34617e6d42cab3b4/xmlnote/WEBRESOURCEe30d3c8009a8066b3588ba6443f54bce/1098" alt=""></p>
+<h5 id="5-cnpm-安装依赖"><a href="#5-cnpm-安装依赖" class="headerlink" title="5. cnpm 安装依赖"></a>5. cnpm 安装依赖</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">打开终端 cd 到first-app的路径中:  </span><br><span class="line"></span><br><span class="line">执行命令 cnpm install </span><br><span class="line"></span><br><span class="line">安装完成之后，在first-app项目中，会多一个node_modules文件夹，这里面就是我们所需要的依赖包资源</span><br></pre></td></tr></table></figure>
+<p><img src="https://note.youdao.com/yws/public/resource/264e93ecfcb6d8df34617e6d42cab3b4/xmlnote/WEBRESOURCE456704b27563fc5a49ab3bbdb331442f/1136" alt=""></p>
+<h5 id="6-启动服务"><a href="#6-启动服务" class="headerlink" title="6. 启动服务"></a>6. 启动服务</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">打开终端 cd 到first-app的路径中:  </span><br><span class="line"></span><br><span class="line">执行命令 npm run dev 或 cnpm run dev  或 npm start</span><br><span class="line"></span><br><span class="line">安装完成之后，在first-app项目中，会多一个node_modules文件夹，这里面就是我们所需要的依赖包资源</span><br></pre></td></tr></table></figure>
+<h5 id="6-打包上线"><a href="#6-打包上线" class="headerlink" title="6. 打包上线"></a>6. 打包上线</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">注意: 项目中的文件都需要放到src 目录下</span><br><span class="line"></span><br><span class="line">      打开终端 cd 到src的路径中:  </span><br><span class="line">  </span><br><span class="line">      执行命令 npm run build 进行项目打包</span><br><span class="line">      </span><br><span class="line">  打包完成后, 项目会生成一个dist文件夹, 项目上线时, 只需要将dist文件夹放到服务器就可以了</span><br></pre></td></tr></table></figure>
+<p>  <img src="https://note.youdao.com/yws/public/resource/264e93ecfcb6d8df34617e6d42cab3b4/xmlnote/WEBRESOURCE3917cacbd76ad4c550974a6088a0b824/1294" alt=""></p>
+<p>  <img src="https://note.youdao.com/yws/public/resource/264e93ecfcb6d8df34617e6d42cab3b4/xmlnote/WEBRESOURCE2b1f8cb619c6b4947e00296514588a87/1297" alt=""></p>
 
       
     </div>
@@ -510,7 +488,7 @@
         <li>
             <p>
                 <span>本文链接:</span>
-                <a href="/2019/01/02/AVFoundation学习笔记/" title="AVFoundation学习笔记">https://ryanmans.github.io/2019/01/02/AVFoundation学习笔记/</a>
+                <a href="/2019/01/02/Vue环境搭建/" title="Vue环境搭建">https://ryanmans.github.io/2019/01/02/Vue环境搭建/</a>
                 <span class="copy-path" title="点击复制文章链接"></span>
             </p>
         </li>
@@ -563,7 +541,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/AVFoundation-媒体捕捉、二维码/" rel="tag"> <i class="fa fa-tag"></i> AVFoundation(媒体捕捉、二维码)</a>
+            <a href="/tags/vue-cli/" rel="tag"> <i class="fa fa-tag"></i> vue-cli</a>
           
         </div>
       
@@ -576,8 +554,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/29/iOS-证书篇/" rel="next" title="AppStore证书 (开发打包、推送、上架)">
-                <i class="fa fa-chevron-left"></i> AppStore证书 (开发打包、推送、上架)
+              <a href="/2019/01/02/AVFoundation学习笔记/" rel="next" title="AVFoundation学习笔记">
+                <i class="fa fa-chevron-left"></i> AVFoundation学习笔记
               </a>
             
           </div>
@@ -585,10 +563,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/01/02/Vue环境搭建/" rel="prev" title="Vue环境搭建">
-                Vue环境搭建 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -738,7 +712,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#AVFoundation学习笔记"><span class="nav-number">1.</span> <span class="nav-text">AVFoundation学习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#捕捉设备"><span class="nav-number">1.1.</span> <span class="nav-text">捕捉设备</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#捕捉会话"><span class="nav-number">1.2.</span> <span class="nav-text">捕捉会话</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#捕捉设备的输入"><span class="nav-number">1.3.</span> <span class="nav-text">捕捉设备的输入</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#捕捉的输出"><span class="nav-number">1.4.</span> <span class="nav-text">捕捉的输出</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#捕捉预览"><span class="nav-number">1.5.</span> <span class="nav-text">捕捉预览</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#手电筒的打开、关闭"><span class="nav-number">1.6.</span> <span class="nav-text">手电筒的打开、关闭</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#实现二维码扫描"><span class="nav-number">1.7.</span> <span class="nav-text">实现二维码扫描</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#自定义拍照"><span class="nav-number">1.8.</span> <span class="nav-text">自定义拍照</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#实现连拍"><span class="nav-number">1.9.</span> <span class="nav-text">实现连拍</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#完整项目输出"><span class="nav-number">1.10.</span> <span class="nav-text">完整项目输出</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Vue-环境搭建"><span class="nav-number">1.</span> <span class="nav-text">Vue 环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#工具"><span class="nav-number">1.1.</span> <span class="nav-text">工具:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-Homebrew安装"><span class="nav-number">1.2.</span> <span class="nav-text">1. Homebrew安装</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-Node安装"><span class="nav-number">1.3.</span> <span class="nav-text">2. Node安装</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-Cnpm安装"><span class="nav-number">1.4.</span> <span class="nav-text">3. Cnpm安装</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-vue-cli-脚手架构建工具"><span class="nav-number">1.5.</span> <span class="nav-text">4. vue-cli (脚手架构建工具)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-vue-init-构建项目"><span class="nav-number">1.6.</span> <span class="nav-text">5. vue-init 构建项目</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-cnpm-安装依赖"><span class="nav-number">1.7.</span> <span class="nav-text">5. cnpm 安装依赖</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6-启动服务"><span class="nav-number">1.8.</span> <span class="nav-text">6. 启动服务</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6-打包上线"><span class="nav-number">1.9.</span> <span class="nav-text">6. 打包上线</span></a></li></ol></li></ol></div>
             
 
           </div>
