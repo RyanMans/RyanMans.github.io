@@ -131,15 +131,15 @@
 <meta property="og:site_name" content="ALLen、LAS&#39;s Blog">
 <meta property="og:description" content="Vue 环境搭建 &amp;ensp; &amp;ensp; 在使用vue.js 构建大型应用的时候推荐使用 NPM 安装方法, NPM能很好的和诸如 &amp;nbsp;Webpack &amp;nbsp;或者 &amp;nbsp;Browserify 模块打包器配合使用   工具: node.js环境(npm包安装) vue-cli脚手架构建工具 cnpm npm淘宝镜像     1. Homebrew安装123456Homebre">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/264e93ecfcb6d8df34617e6d42cab3b4/xmlnote/WEBRESOURCEe30d3c8009a8066b3588ba6443f54bce/1098">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/264e93ecfcb6d8df34617e6d42cab3b4/xmlnote/WEBRESOURCE456704b27563fc5a49ab3bbdb331442f/1136">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/264e93ecfcb6d8df34617e6d42cab3b4/xmlnote/WEBRESOURCE3917cacbd76ad4c550974a6088a0b824/1294">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/264e93ecfcb6d8df34617e6d42cab3b4/xmlnote/WEBRESOURCE2b1f8cb619c6b4947e00296514588a87/1297">
-<meta property="og:updated_time" content="2019-01-02T14:02:32.974Z">
+<meta property="og:image" content="https://ryanmans.github.io/2019/01/02/Vue环境搭建/vue-ci01.png">
+<meta property="og:image" content="https://ryanmans.github.io/2019/01/02/Vue环境搭建/vue-ci02.png">
+<meta property="og:image" content="https://ryanmans.github.io/2019/01/02/Vue环境搭建/vue-ci03.png">
+<meta property="og:image" content="https://ryanmans.github.io/2019/01/02/Vue环境搭建/vue-ci04.png">
+<meta property="og:updated_time" content="2019-01-03T02:41:36.958Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue环境搭建">
 <meta name="twitter:description" content="Vue 环境搭建 &amp;ensp; &amp;ensp; 在使用vue.js 构建大型应用的时候推荐使用 NPM 安装方法, NPM能很好的和诸如 &amp;nbsp;Webpack &amp;nbsp;或者 &amp;nbsp;Browserify 模块打包器配合使用   工具: node.js环境(npm包安装) vue-cli脚手架构建工具 cnpm npm淘宝镜像     1. Homebrew安装123456Homebre">
-<meta name="twitter:image" content="https://note.youdao.com/yws/public/resource/264e93ecfcb6d8df34617e6d42cab3b4/xmlnote/WEBRESOURCEe30d3c8009a8066b3588ba6443f54bce/1098">
+<meta name="twitter:image" content="https://ryanmans.github.io/2019/01/02/Vue环境搭建/vue-ci01.png">
 
 
 
@@ -460,13 +460,13 @@
 <h5 id="4-vue-cli-脚手架构建工具"><a href="#4-vue-cli-脚手架构建工具" class="headerlink" title="4. vue-cli (脚手架构建工具)"></a>4. vue-cli (脚手架构建工具)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">打开终端,执行以下命令安装vue-cli:</span><br><span class="line"></span><br><span class="line">npm install -g vue-cli 或 cnpm install -g vue-cli</span><br></pre></td></tr></table></figure>
 <h5 id="5-vue-init-构建项目"><a href="#5-vue-init-构建项目" class="headerlink" title="5. vue-init 构建项目"></a>5. vue-init 构建项目</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1.新建目录 web-vue 文件夹</span><br><span class="line"></span><br><span class="line">2.打开终端,执行以下命令构建项目:</span><br><span class="line"></span><br><span class="line">  vue init webpack first-app</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Project name :项目名称  如果不需要更改直接回车就可以了。注意：这里不能使用大写</span><br><span class="line"></span><br><span class="line">Project description:项目描述，默认为A Vue.js project,直接回车，不用编写。</span><br><span class="line"></span><br><span class="line">Author：作者，如果你有配置git的作者，它会读取</span><br><span class="line"></span><br><span class="line">Install  vue-router? 是否安装vue的路由插件，我们这里需要安装，所以选择Y</span><br><span class="line"></span><br><span class="line">Use ESLint to lint your code? 是否用ESLint来限制你的代码错误和风格。我们这里不需要输入n（建议），如果你是大型团队开发，最好是进行配置。</span><br><span class="line"></span><br><span class="line">setup unit tests with  Karma + Mocha? 是否需要安装单元测试工具Karma+Mocha，我们这里不需要，所以输入n</span><br><span class="line"></span><br><span class="line">Setup e2e tests with Nightwatch?是否安装e2e来进行用户行为模拟测试，我们这里不需要，所以输入n</span><br></pre></td></tr></table></figure>
-<p><img src="https://note.youdao.com/yws/public/resource/264e93ecfcb6d8df34617e6d42cab3b4/xmlnote/WEBRESOURCEe30d3c8009a8066b3588ba6443f54bce/1098" alt=""></p>
+<p><img src="/2019/01/02/Vue环境搭建/vue-ci01.png" alt=""></p>
 <h5 id="5-cnpm-安装依赖"><a href="#5-cnpm-安装依赖" class="headerlink" title="5. cnpm 安装依赖"></a>5. cnpm 安装依赖</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">打开终端 cd 到first-app的路径中:  </span><br><span class="line"></span><br><span class="line">执行命令 cnpm install </span><br><span class="line"></span><br><span class="line">安装完成之后，在first-app项目中，会多一个node_modules文件夹，这里面就是我们所需要的依赖包资源</span><br></pre></td></tr></table></figure>
-<p><img src="https://note.youdao.com/yws/public/resource/264e93ecfcb6d8df34617e6d42cab3b4/xmlnote/WEBRESOURCE456704b27563fc5a49ab3bbdb331442f/1136" alt=""></p>
+<p><img src="/2019/01/02/Vue环境搭建/vue-ci02.png" alt=""></p>
 <h5 id="6-启动服务"><a href="#6-启动服务" class="headerlink" title="6. 启动服务"></a>6. 启动服务</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">打开终端 cd 到first-app的路径中:  </span><br><span class="line"></span><br><span class="line">执行命令 npm run dev 或 cnpm run dev  或 npm start</span><br><span class="line"></span><br><span class="line">安装完成之后，在first-app项目中，会多一个node_modules文件夹，这里面就是我们所需要的依赖包资源</span><br></pre></td></tr></table></figure>
 <h5 id="7-打包上线"><a href="#7-打包上线" class="headerlink" title="7. 打包上线"></a>7. 打包上线</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">注意: 项目中的文件都需要放到src 目录下</span><br><span class="line"></span><br><span class="line">      打开终端 cd 到src的路径中:  </span><br><span class="line">  </span><br><span class="line">      执行命令 npm run build 进行项目打包</span><br><span class="line">      </span><br><span class="line">  打包完成后, 项目会生成一个dist文件夹, 项目上线时, 只需要将dist文件夹放到服务器就可以了</span><br></pre></td></tr></table></figure>
-<p><img src="https://note.youdao.com/yws/public/resource/264e93ecfcb6d8df34617e6d42cab3b4/xmlnote/WEBRESOURCE3917cacbd76ad4c550974a6088a0b824/1294" alt=""></p>
-<p><img src="https://note.youdao.com/yws/public/resource/264e93ecfcb6d8df34617e6d42cab3b4/xmlnote/WEBRESOURCE2b1f8cb619c6b4947e00296514588a87/1297" alt=""></p>
+<p><img src="/2019/01/02/Vue环境搭建/vue-ci03.png" alt=""></p>
+<p><img src="/2019/01/02/Vue环境搭建/vue-ci04.png" alt=""></p>
 
       
     </div>
