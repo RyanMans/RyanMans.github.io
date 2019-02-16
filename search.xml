@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[PDF文档]]></title>
+    <url>%2F2019%2F02%2F16%2FPDF%E6%96%87%E6%A1%A3%2F</url>
+    <content type="text"><![CDATA[XKArticleTextContentBrowser基于图文课程PDF文档阅读的展示(包含3种方式) WKWebView加载 (iOS8.0之后) QuickLook框架 - QLPreviewController加载 CoreGraphics框架绘制 一、WKWebView加载1iOS8.0之后,苹果已推出框架WebKit, WKWebView作为其中的浏览器控件,其加载速度,内存占用率都优于UIWebView,故此本文, 着重介绍WKWebView(UIWebView用法接近) 其用法简单如下: 二、QLPreviewController加载1QLPreviewController是系统自带的文件预览控制器,要使用QLPreviewController先得在文件中导入头文件#import &lt;QuickLook/QuickLook.h&gt;，并且实现其代理方法QLPreviewControllerDataSource QLPreviewController只能加载本地文件，不支持在线预览。显示效果比webView要好。 QLPreviewController会自带导航和工具栏, 如果要加载到视图中去, 需要将QLPreviewController中视图添加到父视图,且在iOS10.0之后,需要加入到子控制器中 三、CoreGraphics框架绘制CGContexDrawPDFPage和UIPageViewController实现翻页浏览功能 绘制内容: UIPageViewController, 在UIPageViewControllerTransitionStyleScroll模式下, 如果使用展现时创建的方式,展示视图,会出现页面在第二页或者倒数第二页重复的原因, 故本项目, 使用全局数据源存储, 可同时兼容两种方式的使用. 四、完整项目1项目中,详细展现了几种方式的使用, 并且封装了下载XKFileDownloader框架, 结合使用 Github地址: XKArticleTextContentBrowser]]></content>
+      <categories>
+        <category>Object-C</category>
+      </categories>
+      <tags>
+        <tag>Object-C</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Cocoapods公有库详解]]></title>
     <url>%2F2019%2F01%2F29%2FCocoapods%E5%85%AC%E6%9C%89%E5%BA%93%E8%AF%A6%E8%A7%A3%2F</url>
     <content type="text"><![CDATA[创建远程仓库 (Github)1. 注册Github账号 – Github官网2. 创建工具类库2.1 基本信息填写12CocoaPods是托管在github上的，所有的Pods也都是托管在github上，因此我们首先需要创建一个属于自己的 github 仓库，如下图所示： 123456789101112131415信息注释:1. Repository name: 开源库的名字 (必填)2. Description : 开源库的功能作用描述3. Public: 开源仓库4. Private: 私有仓库,收费(如果是公司内部使用的话这里推荐大家使用私有的仓库) 5. Initialize this repository with a README: readme文件,建议勾选进行创建,这是对该库完整的一个说明文档6. gitgnore: 看情况自行选择类型7. License类型: MIT License (建议使用) 2.2 添加项目tag 1Repository主页 -&gt; release -&gt; create tag 2.3 clone 项目到本地 (客户端:GitHub Desktop)3. 基于cocoapods 自动创建3.1 执行命令:123打开终端 cd /Users/allenlas/Desktop/XKCocoapods 桌面路径下,执行:pod lib create XKCocoapods(项目名称) 回复问题: 项目文件层次结构: 1复制 XKCocoapods文件夹下的 XKCocoapods文件, 替换掉本地clone下来的XKCocoapods文件,最终如下: 3.2 配置podspec文件 1podsepc 配置完成, 需要提交到GitHub上,不然验证上会验证上一次提交的信息 3.3 完善Example1XKCocoapods文件-&gt; classes目录 -&gt; 添加XKCocoapods类 进入Example文件夹，执行pod install，让demo项目安装依赖项并更新配置 如下: 更新配置后, 提交代码到GitHub 3.4 验证podspec文件12345执行命令 : pod lib lint --allow-warnings pod spec lint --allow-warnings 验证成功: 常见错误,如: 1- ERROR | [iOS] file patterns: The `source_files` pattern did not match any file 此错误的原因是没有找到匹配的文件。 解决方案： 手动创建文件，具体操作方法如下: 1234567终端输入:open /Users/allenlas/Library/Caches/CocoaPods/Pods/External/XKCocoaPods进入最近的一个日志文件,创建文件夹与source_files文件路径对应:XKCocoapods文件-&gt; classes目录 -&gt; 添加XKCocoapods类 提交代码后, 重新验证 spec文件的可行性 4. 使用trunk push spec文件到cocoapods12345671. 如果是第一次使用,需要注册: pod trunk register yourmail@gmail.com &apos;yourName&apos; 3. 检查是否注册成功: pod trunk me4. push spec文件: pod trunk push XKCocoapods.podspec 上传成功: 5. 检查项目spec 是否上传成功1pod search xxxx(上传的项目名称) 常见错误: 1[!] Unable to find a pod with name, author, summary, or description matching `XKCocoapods` 执行命令 : 1234567pod setup或者删除本地搜索索引rm ~/Library/Caches/CocoaPods/search_index.json重新pod search XKCocoapods]]></content>
