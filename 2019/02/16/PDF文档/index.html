@@ -123,13 +123,13 @@
 
 
 
-<meta name="description" content="XKArticleTextContentBrowser基于图文课程PDF文档阅读的展示(包含3种方式)  WKWebView加载 (iOS8.0之后) QuickLook框架 - QLPreviewController加载  CoreGraphics框架绘制  一、WKWebView加载1iOS8.0之后,苹果已推出框架WebKit, WKWebView作为其中的浏览器控件,其加载速度,内存占用率">
+<meta name="description" content="基于图文课程PDF文档阅读的展示(包含3种方式)  WKWebView加载 (iOS8.0之后) QuickLook框架 - QLPreviewController加载  CoreGraphics框架绘制  一、WKWebView加载12iOS8.0之后,苹果已推出框架WebKit, WKWebView作为其中的浏览器控件,其加载速度,内存占用率都优于UIWebView,故此本文, 着重介绍WKW">
 <meta name="keywords" content="Object-C">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PDF文档">
 <meta property="og:url" content="https://ryanmans.github.io/2019/02/16/PDF文档/index.html">
 <meta property="og:site_name" content="ALLen、LAS&#39;s Blog">
-<meta property="og:description" content="XKArticleTextContentBrowser基于图文课程PDF文档阅读的展示(包含3种方式)  WKWebView加载 (iOS8.0之后) QuickLook框架 - QLPreviewController加载  CoreGraphics框架绘制  一、WKWebView加载1iOS8.0之后,苹果已推出框架WebKit, WKWebView作为其中的浏览器控件,其加载速度,内存占用率">
+<meta property="og:description" content="基于图文课程PDF文档阅读的展示(包含3种方式)  WKWebView加载 (iOS8.0之后) QuickLook框架 - QLPreviewController加载  CoreGraphics框架绘制  一、WKWebView加载12iOS8.0之后,苹果已推出框架WebKit, WKWebView作为其中的浏览器控件,其加载速度,内存占用率都优于UIWebView,故此本文, 着重介绍WKW">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://ryanmans.github.io/2019/02/16/PDF文档/image01.png">
 <meta property="og:image" content="https://ryanmans.github.io/2019/02/16/PDF文档/image01.png">
@@ -137,10 +137,10 @@
 <meta property="og:image" content="https://ryanmans.github.io/2019/02/16/PDF文档/image04.png">
 <meta property="og:image" content="https://ryanmans.github.io/2019/02/16/PDF文档/image05.png">
 <meta property="og:image" content="https://ryanmans.github.io/2019/02/16/PDF文档/image06.png">
-<meta property="og:updated_time" content="2019-02-16T06:54:02.424Z">
+<meta property="og:updated_time" content="2019-02-16T06:56:33.825Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PDF文档">
-<meta name="twitter:description" content="XKArticleTextContentBrowser基于图文课程PDF文档阅读的展示(包含3种方式)  WKWebView加载 (iOS8.0之后) QuickLook框架 - QLPreviewController加载  CoreGraphics框架绘制  一、WKWebView加载1iOS8.0之后,苹果已推出框架WebKit, WKWebView作为其中的浏览器控件,其加载速度,内存占用率">
+<meta name="twitter:description" content="基于图文课程PDF文档阅读的展示(包含3种方式)  WKWebView加载 (iOS8.0之后) QuickLook框架 - QLPreviewController加载  CoreGraphics框架绘制  一、WKWebView加载12iOS8.0之后,苹果已推出框架WebKit, WKWebView作为其中的浏览器控件,其加载速度,内存占用率都优于UIWebView,故此本文, 着重介绍WKW">
 <meta name="twitter:image" content="https://ryanmans.github.io/2019/02/16/PDF文档/image01.png">
 
 
@@ -450,16 +450,16 @@
       
 
       
-        <h1 id="XKArticleTextContentBrowser"><a href="#XKArticleTextContentBrowser" class="headerlink" title="XKArticleTextContentBrowser"></a>XKArticleTextContentBrowser</h1><p>基于图文课程PDF文档阅读的展示(包含3种方式)</p>
+        <p>基于图文课程PDF文档阅读的展示(包含3种方式)</p>
 <ul>
 <li>WKWebView加载 (iOS8.0之后)</li>
 <li>QuickLook框架 - QLPreviewController加载 </li>
 <li>CoreGraphics框架绘制</li>
 </ul>
-<h4 id="一、WKWebView加载"><a href="#一、WKWebView加载" class="headerlink" title="一、WKWebView加载"></a>一、WKWebView加载</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iOS8.0之后,苹果已推出框架WebKit, WKWebView作为其中的浏览器控件,其加载速度,内存占用率都优于UIWebView,故此本文, 着重介绍WKWebView(UIWebView用法接近)</span><br></pre></td></tr></table></figure>
+<h4 id="一、WKWebView加载"><a href="#一、WKWebView加载" class="headerlink" title="一、WKWebView加载"></a>一、WKWebView加载</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">iOS8.0之后,苹果已推出框架WebKit, WKWebView作为其中的浏览器控件,其加载速度,</span><br><span class="line">内存占用率都优于UIWebView,故此本文, 着重介绍WKWebView(UIWebView用法接近)</span><br></pre></td></tr></table></figure>
 <p>其用法简单如下:</p>
 <p><img src="/2019/02/16/PDF文档/image01.png" alt=""></p>
-<h4 id="二、QLPreviewController加载"><a href="#二、QLPreviewController加载" class="headerlink" title="二、QLPreviewController加载"></a>二、QLPreviewController加载</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">QLPreviewController是系统自带的文件预览控制器,要使用QLPreviewController先得在文件中导入头文件#import &lt;QuickLook/QuickLook.h&gt;，并且实现其代理方法QLPreviewControllerDataSource</span><br></pre></td></tr></table></figure>
+<h4 id="二、QLPreviewController加载"><a href="#二、QLPreviewController加载" class="headerlink" title="二、QLPreviewController加载"></a>二、QLPreviewController加载</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">QLPreviewController是系统自带的文件预览控制器,要使用QLPreviewController</span><br><span class="line">先得在文件中导入头文件#import &lt;QuickLook/QuickLook.h&gt;，并且实现其代理方法QLPreviewControllerDataSource</span><br></pre></td></tr></table></figure>
 <p><img src="/2019/02/16/PDF文档/image01.png" alt=""></p>
 <ol>
 <li>QLPreviewController只能加载本地文件，不支持在线预览。显示效果比webView要好。</li>
@@ -718,7 +718,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#XKArticleTextContentBrowser"><span class="nav-number">1.</span> <span class="nav-text">XKArticleTextContentBrowser</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、WKWebView加载"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">一、WKWebView加载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、QLPreviewController加载"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">二、QLPreviewController加载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、CoreGraphics框架绘制"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">三、CoreGraphics框架绘制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、完整项目"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">四、完整项目</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、WKWebView加载"><span class="nav-number">1.</span> <span class="nav-text">一、WKWebView加载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、QLPreviewController加载"><span class="nav-number">2.</span> <span class="nav-text">二、QLPreviewController加载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、CoreGraphics框架绘制"><span class="nav-number">3.</span> <span class="nav-text">三、CoreGraphics框架绘制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、完整项目"><span class="nav-number">4.</span> <span class="nav-text">四、完整项目</span></a></li></ol></div>
             
 
           </div>
