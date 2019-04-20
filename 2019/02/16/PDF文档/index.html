@@ -132,12 +132,11 @@
 <meta property="og:description" content="基于图文课程PDF文档阅读的展示(包含3种方式)  WKWebView加载 (iOS8.0之后) QuickLook框架 - QLPreviewController加载  CoreGraphics框架绘制  一、WKWebView加载12iOS8.0之后,苹果已推出框架WebKit, WKWebView作为其中的浏览器控件,其加载速度,内存占用率都优于UIWebView,故此本文, 着重介绍WKW">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://ryanmans.github.io/2019/02/16/PDF文档/image01.png">
-<meta property="og:image" content="https://ryanmans.github.io/2019/02/16/PDF文档/image01.png">
 <meta property="og:image" content="https://ryanmans.github.io/2019/02/16/PDF文档/image03.png">
 <meta property="og:image" content="https://ryanmans.github.io/2019/02/16/PDF文档/image04.png">
 <meta property="og:image" content="https://ryanmans.github.io/2019/02/16/PDF文档/image05.png">
 <meta property="og:image" content="https://ryanmans.github.io/2019/02/16/PDF文档/image06.png">
-<meta property="og:updated_time" content="2019-02-16T06:56:33.825Z">
+<meta property="og:updated_time" content="2019-03-22T08:33:38.687Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PDF文档">
 <meta name="twitter:description" content="基于图文课程PDF文档阅读的展示(包含3种方式)  WKWebView加载 (iOS8.0之后) QuickLook框架 - QLPreviewController加载  CoreGraphics框架绘制  一、WKWebView加载12iOS8.0之后,苹果已推出框架WebKit, WKWebView作为其中的浏览器控件,其加载速度,内存占用率都优于UIWebView,故此本文, 着重介绍WKW">
@@ -193,7 +192,7 @@
 <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -205,7 +204,7 @@
     <!-- github链接 -->
     <a href="https://github.com/ryanmans"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png" alt="Fork me on GitHub"></a>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -325,20 +324,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://ryanmans.github.io/2019/02/16/PDF文档/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ALLen、LAS">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="ALLen、LAS's Blog">
     </span>
 
@@ -381,7 +380,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Object-C/" itemprop="url" rel="index">
                     <span itemprop="name">Object-C</span>
                   </a>
@@ -458,18 +457,17 @@
 </ul>
 <h4 id="一、WKWebView加载"><a href="#一、WKWebView加载" class="headerlink" title="一、WKWebView加载"></a>一、WKWebView加载</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">iOS8.0之后,苹果已推出框架WebKit, WKWebView作为其中的浏览器控件,其加载速度,</span><br><span class="line">内存占用率都优于UIWebView,故此本文, 着重介绍WKWebView(UIWebView用法接近)</span><br></pre></td></tr></table></figure>
 <p>其用法简单如下:</p>
-<p><img src="/2019/02/16/PDF文档/image01.png" alt=""></p>
+<p><img src="/2019/02/16/PDF文档/image01.png" alt></p>
 <h4 id="二、QLPreviewController加载"><a href="#二、QLPreviewController加载" class="headerlink" title="二、QLPreviewController加载"></a>二、QLPreviewController加载</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">QLPreviewController是系统自带的文件预览控制器,要使用QLPreviewController</span><br><span class="line">先得在文件中导入头文件#import &lt;QuickLook/QuickLook.h&gt;，并且实现其代理方法QLPreviewControllerDataSource</span><br></pre></td></tr></table></figure>
-<p><img src="/2019/02/16/PDF文档/image01.png" alt=""></p>
 <ol>
 <li>QLPreviewController只能加载本地文件，不支持在线预览。显示效果比webView要好。</li>
 <li>QLPreviewController会自带导航和工具栏, 如果要加载到视图中去, 需要将QLPreviewController中视图添加到父视图,且在iOS10.0之后,需要加入到子控制器中</li>
 </ol>
-<p><img src="/2019/02/16/PDF文档/image03.png" alt=""></p>
+<p><img src="/2019/02/16/PDF文档/image03.png" alt></p>
 <h4 id="三、CoreGraphics框架绘制"><a href="#三、CoreGraphics框架绘制" class="headerlink" title="三、CoreGraphics框架绘制"></a>三、CoreGraphics框架绘制</h4><p>CGContexDrawPDFPage和UIPageViewController实现翻页浏览功能</p>
-<p><img src="/2019/02/16/PDF文档/image04.png" alt=""></p>
-<p><img src="/2019/02/16/PDF文档/image05.png" alt=""></p>
-<p>绘制内容:<br><img src="/2019/02/16/PDF文档/image06.png" alt=""></p>
+<p><img src="/2019/02/16/PDF文档/image04.png" alt></p>
+<p><img src="/2019/02/16/PDF文档/image05.png" alt></p>
+<p>绘制内容:<br><img src="/2019/02/16/PDF文档/image06.png" alt></p>
 <p>UIPageViewController, 在UIPageViewControllerTransitionStyleScroll模式下, 如果使用展现时创建的方式,展示视图,会出现页面在第二页或者倒数第二页重复的原因, 故本项目, 使用全局数据源存储, 可同时兼容两种方式的使用.</p>
 <h4 id="四、完整项目"><a href="#四、完整项目" class="headerlink" title="四、完整项目"></a>四、完整项目</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">项目中,详细展现了几种方式的使用, 并且封装了下载XKFileDownloader框架, 结合使用</span><br></pre></td></tr></table></figure>
 <p>Github地址: <a href="https://github.com/ryanmans/XKArticleTextContentBrowser" target="_blank" rel="noopener">XKArticleTextContentBrowser</a></p>
@@ -632,7 +630,7 @@
 
       <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="ALLen、LAS">
             
